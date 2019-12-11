@@ -6,11 +6,11 @@ import './App.css';
 function App() {
   //information for map
   const [viewport, setViewport] = useState({
-    latitude: 32.298760, 
-    longitude: -90.184810, 
+    latitude: 33.000000, 
+    longitude: -90.000000, 
     width: '100vw', 
     height: '100vh', 
-    zoom: 10
+    zoom: 6.5
 
   })
   return (
@@ -18,7 +18,7 @@ function App() {
       
      <ReactMapGL {...viewport}
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-      mapStyle="mapbox://styles/umekow/ck41rk0kz1nmd1cp8zog2xn4h"
+      mapStyle="mapbox://styles/umekow/ck41vrm6q06nk1cn7j1gm30nk"
       onViewportChange={viewport => setViewport(viewport)}
      >
        markers
