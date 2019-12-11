@@ -18,6 +18,7 @@ function App() {
       
      <ReactMapGL {...viewport}
       mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+      mapStyle="mapbox://styles/umekow/ck41rk0kz1nmd1cp8zog2xn4h"
       onViewportChange={viewport => setViewport(viewport)}
      >
        markers
