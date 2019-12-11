@@ -16,7 +16,9 @@ function App() {
   return (
     <div className="App">
       
-     <ReactMapGL {...viewport}>
+     <ReactMapGL {...viewport}
+      mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+     >
        markers
      </ReactMapGL>
     </div>
