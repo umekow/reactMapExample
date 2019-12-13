@@ -3,6 +3,9 @@ import React, {useState} from 'react';
 import ReactMapGL from 'react-map-gl';
 import './App.css';
 
+//data
+import * as capitalIncomes from './data/m'
+
 function App() {
   //information for map
   const [viewport, setViewport] = useState({
